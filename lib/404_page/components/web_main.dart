@@ -22,15 +22,33 @@ class left_content extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
-        children: const [
-          Text(
+        children: [
+          const Text(
             'Oh My Gosssh!',
             style: TextStyle(
                 color: Colors.black, fontSize: 30, fontWeight: FontWeight.w400),
           ),
-          Text('You lost your way'),
-          SizedBox(),
-          Text('The page you\'re looking for is \n not available for now.'),
+          const Text(
+            'You lost your way',
+            style: TextStyle(color: Colors.black26, fontSize: 12),
+          ),
+          const SizedBox(),
+          const Text(
+              'The page you\'re looking for is \n not available for now.'),
+          const SizedBox(),
+          Container(
+            decoration: BoxDecoration(
+                color: Colors.white, borderRadius: BorderRadius.circular(10)),
+            child: Row(
+              children: const [
+                Icon(Icons.navigate_before_rounded, color: Colors.blue),
+                Text(
+                  'Go Back',
+                  style: TextStyle(color: Colors.blue, fontSize: 18),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
