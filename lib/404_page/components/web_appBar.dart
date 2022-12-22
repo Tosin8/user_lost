@@ -9,31 +9,31 @@ class web_appbar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Image.asset(
-            'https://lottiefiles.com/77620-404-website-error-animation'),
+            'assets/images/logo.png'),
         const SizedBox(width: 10),
         const Text(
           'Products',
           style: TextStyle(
               color: Color.fromARGB(255, 67, 127, 232),
-              fontWeight: FontWeight.bold),
+              fontWeight: FontWeight.bold, fontSize: 20),
         ),
         const Text(
           'About',
           style: TextStyle(
               color: Color.fromARGB(255, 67, 127, 232),
-              fontWeight: FontWeight.bold),
+              fontWeight: FontWeight.bold, fontSize: 20),
         ),
         const Text(
           'Blog',
           style: TextStyle(
               color: Color.fromARGB(255, 67, 127, 232),
-              fontWeight: FontWeight.bold),
+              fontWeight: FontWeight.bold, fontSize: 20),
         ),
         const Text(
           'Contacts',
           style: TextStyle(
               color: Color.fromARGB(255, 67, 127, 232),
-              fontWeight: FontWeight.bold),
+              fontWeight: FontWeight.bold, fontSize: 20),
         ),
       ],
     );
