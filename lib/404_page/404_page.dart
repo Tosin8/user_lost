@@ -10,17 +10,16 @@ class error_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(),
-      body: Container(
-          padding: const EdgeInsets.only(left: 10),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              web_appbar(),
-              web_main(),
-              web_footer(),
-            ],
-          )),
-    );
+        // appBar: AppBar(),
+        body: Padding(
+      padding: const EdgeInsets.symmetric(vertical: 5),
+      child: Column(
+        children: const [
+          web_appbar(),
+          web_main(),
+          web_footer(),
+        ],
+      ),
+    ));
   }
 }
