@@ -5,6 +5,8 @@ class web_footer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Text('2022 All Rights Reserved', )
+    );
   }
 }
