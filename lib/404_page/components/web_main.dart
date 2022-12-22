@@ -6,6 +6,7 @@ class web_main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: const [
         left_content(),
         right_content(),
@@ -19,7 +20,20 @@ class left_content extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Column(
+        children: const [
+          Text(
+            'Oh My Gosssh!',
+            style: TextStyle(
+                color: Colors.black, fontSize: 30, fontWeight: FontWeight.w400),
+          ),
+          Text('You lost your way'),
+          SizedBox(),
+          Text('The page you\'re looking for is \n not available for now.'),
+        ],
+      ),
+    );
   }
 }
 
