@@ -6,7 +6,12 @@ class web_footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('2022 All Rights Reserved', )
+      child: const Center(
+          child: Text('2022 All Rights Reserved',
+              style: TextStyle(
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              ))),
     );
   }
 }
