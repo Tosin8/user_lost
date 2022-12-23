@@ -37,8 +37,17 @@ class left_content extends StatelessWidget {
               'The page you\'re looking for is \n not available for now.'),
           const SizedBox(),
           Container(
+            width: 200, 
+            height: 200, 
+
             decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(10)),
+                color: Colors.white, borderRadius: BorderRadius.circular(10), 
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 25.0, 
+                    
+                  ), 
+                ]),
             child: Row(
               children: const [
                 Icon(Icons.navigate_before_rounded, color: Colors.blue),
