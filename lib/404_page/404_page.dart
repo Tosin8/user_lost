@@ -16,7 +16,9 @@ class error_page extends StatelessWidget {
       child: Column(
         children: const [
           web_appbar(),
+          Spacer(), 
           web_main(),
+          Spacer(), 
           web_footer(),
         ],
       ),
