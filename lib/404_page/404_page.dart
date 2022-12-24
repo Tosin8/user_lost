@@ -12,13 +12,13 @@ class error_page extends StatelessWidget {
     return Scaffold(
         // appBar: AppBar(),
         body: Padding(
-      padding: const EdgeInsets.symmetric(vertical: 5),
+      padding: const EdgeInsets.symmetric(vertical: 10),
       child: Column(
         children: const [
           web_appbar(),
-          Spacer(), 
+          Spacer(),
           web_main(),
-          Spacer(), 
+          Spacer(),
           web_footer(),
         ],
       ),

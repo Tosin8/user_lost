@@ -34,7 +34,7 @@ class web_appbar extends StatelessWidget {
         const Text(
           'Contacts',
           style: TextStyle(
-              color: Color.fromARGB(255, 67, 127, 232),
+              color: Color(0xFF64B5F6),
               fontWeight: FontWeight.bold,
               fontSize: 20),
         ),
