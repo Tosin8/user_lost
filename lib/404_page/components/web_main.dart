@@ -5,12 +5,15 @@ class web_main extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: const [
-        left_content(),
-        right_content(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 120),
+      child: Row(
+        children: const [
+          left_content(),
+          SizedBox(width: 10),
+          right_content(),
+        ],
+      ),
     );
   }
 }
@@ -22,31 +25,33 @@ class left_content extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const Text(
             'Oh My Gosssh!',
             style: TextStyle(
-                color: Colors.black, fontSize: 30, fontWeight: FontWeight.w400),
+                color: Colors.black, fontSize: 45, fontWeight: FontWeight.w400),
           ),
+          const SizedBox(height: 10),
           const Text(
             'You lost your way',
-            style: TextStyle(color: Colors.black26, fontSize: 12),
+            style: TextStyle(color: Colors.black26, fontSize: 20),
           ),
-          const SizedBox(),
+          const SizedBox(height: 10),
           const Text(
-              'The page you\'re looking for is \n not available for now.'),
-          const SizedBox(),
+              'The page you\'re looking for is \n not available for now.',
+              style: TextStyle(fontSize: 20)),
+          const SizedBox(height: 20),
           Container(
-            width: 200, 
-            height: 200, 
-
+            width: 100,
+            height: 60,
             decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(10), 
-                boxShadow: [
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                boxShadow: const [
                   BoxShadow(
-                    blurRadius: 25.0, 
-                    
-                  ), 
+                    blurRadius: 5.0,
+                  ),
                 ]),
             child: Row(
               children: const [

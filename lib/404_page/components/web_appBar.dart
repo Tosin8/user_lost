@@ -6,10 +6,10 @@ class web_appbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Image.asset('assets/images/logo.png'),
-        const SizedBox(width: 10),
+        const SizedBox(width: 20),
         const Text(
           'Products',
           style: TextStyle(
@@ -38,6 +38,7 @@ class web_appbar extends StatelessWidget {
               fontWeight: FontWeight.bold,
               fontSize: 20),
         ),
+        const SizedBox(width: 10),
       ],
     );
   }
