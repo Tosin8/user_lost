@@ -10,7 +10,7 @@ class web_main extends StatelessWidget {
       child: Row(
         children: const [
           left_content(),
-          SizedBox(width: 10),
+          SizedBox(width: 30),
           right_content(),
         ],
       ),
@@ -43,7 +43,7 @@ class left_content extends StatelessWidget {
               style: TextStyle(fontSize: 20)),
           const SizedBox(height: 20),
           Container(
-            width: 150,
+            width: 130,
             height: 50,
             decoration: BoxDecoration(
                 color: Colors.white,
