@@ -53,7 +53,8 @@ class left_content extends StatelessWidget {
                     blurRadius: 3.0,
                   ),
                 ]),
-            child: Center(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 12),
               child: Row(
                 children: const [
                   Icon(Icons.navigate_before_rounded, color: Colors.blue),
