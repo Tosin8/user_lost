@@ -10,7 +10,7 @@ class web_main extends StatelessWidget {
       child: Row(
         children: const [
           left_content(),
-          SizedBox(width: 30),
+          SizedBox(width: 60),
           right_content(),
         ],
       ),
