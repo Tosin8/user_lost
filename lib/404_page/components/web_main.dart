@@ -43,8 +43,8 @@ class left_content extends StatelessWidget {
               style: TextStyle(fontSize: 20)),
           const SizedBox(height: 20),
           Container(
-            width: 100,
-            height: 60,
+            width: 150,
+            height: 50,
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
