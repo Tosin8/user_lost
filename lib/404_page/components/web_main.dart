@@ -50,17 +50,19 @@ class left_content extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 boxShadow: const [
                   BoxShadow(
-                    blurRadius: 5.0,
+                    blurRadius: 3.0,
                   ),
                 ]),
-            child: Row(
-              children: const [
-                Icon(Icons.navigate_before_rounded, color: Colors.blue),
-                Text(
-                  'Go Back',
-                  style: TextStyle(color: Colors.blue, fontSize: 18),
-                )
-              ],
+            child: Center(
+              child: Row(
+                children: const [
+                  Icon(Icons.navigate_before_rounded, color: Colors.blue),
+                  Text(
+                    'Go Back',
+                    style: TextStyle(color: Colors.blue, fontSize: 18),
+                  )
+                ],
+              ),
             ),
           ),
         ],
