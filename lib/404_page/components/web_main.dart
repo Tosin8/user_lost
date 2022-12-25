@@ -43,7 +43,9 @@ class left_content extends StatelessWidget {
               style: TextStyle(fontSize: 20)),
           const SizedBox(height: 20),
           GestureDetector(
-            onTap: (){},
+            onTap: () {
+              print('go back');
+            },
             child: Container(
               width: 130,
               height: 50,
