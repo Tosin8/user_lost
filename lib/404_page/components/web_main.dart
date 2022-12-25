@@ -42,27 +42,30 @@ class left_content extends StatelessWidget {
               'The page you\'re looking for is \n not available for now.',
               style: TextStyle(fontSize: 20)),
           const SizedBox(height: 20),
-          Container(
-            width: 130,
-            height: 50,
-            decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(10),
-                boxShadow: const [
-                  BoxShadow(
-                    blurRadius: 3.0,
-                  ),
-                ]),
-            child: Padding(
-              padding: const EdgeInsets.only(left: 12),
-              child: Row(
-                children: const [
-                  Icon(Icons.navigate_before_rounded, color: Colors.blue),
-                  Text(
-                    'Go Back',
-                    style: TextStyle(color: Colors.blue, fontSize: 18),
-                  )
-                ],
+          GestureDetector(
+            onTap: (){},
+            child: Container(
+              width: 130,
+              height: 50,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: const [
+                    BoxShadow(
+                      blurRadius: 3.0,
+                    ),
+                  ]),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 12),
+                child: Row(
+                  children: const [
+                    Icon(Icons.navigate_before_rounded, color: Colors.blue),
+                    Text(
+                      'Go Back',
+                      style: TextStyle(color: Colors.blue, fontSize: 18),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
